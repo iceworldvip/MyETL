@@ -3,12 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.cto.etl.myetl.constants;
+package org.ice.etl.myetl.sql;
 
 /**
  *
  * @author ice
  */
-public enum ConstantEnum {
-
+public class JDBCTemplate {
 }

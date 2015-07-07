@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.cto.etl.myetl.commons.entity;
+package org.ice.etl.myetl.sql.exception;
 
 /**
- * 数据类型
  *
  * @author ice
  */
-class DataType {
+public class SqlException extends Exception {
 
-    private String typeName;
+    public SqlException(String message) {
+        super(message);
+    }
+
 }
