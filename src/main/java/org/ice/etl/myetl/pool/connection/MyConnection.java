@@ -14,10 +14,16 @@ import java.sql.SQLException;
  * @author ice
  */
 public class MyConnection {
-    private Connection connection;
 
-    public MyConnection() throws SQLException {
-        connection = DriverManager.getConnection("url", "username", "password");
+    private final Connection connection;
+
+    public MyConnection() throws SQLException, ClassNotFoundException {
+        Class.forName("com.mysql.jdbc.Driver");
+        connection = DriverManager.getConnection("jdbc:mysql://localhost", "root", "");
     }
-    
+
+    public Connection getConnection() {
+        return connection;
+    }
+
 }
